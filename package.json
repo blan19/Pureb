@@ -1,9 +1,10 @@
 {
-  "name": "pureb",
+  "name": "pureb-root",
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "dev:client": "turbo run dev --scope=\"@pureb/example\"",
+    "dev": "turbo run dev --scope=\"@pureb/example\"",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
